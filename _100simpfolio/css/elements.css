@@ -1,0 +1,101 @@
+body{
+    font-family: "Trebuchet MS";
+    font-size:15px;
+    font-weight:400;
+}
+.btn-website{
+    max-width: 197px;
+    width:100%;
+    height: 37px;
+    background-color: #fdc502;
+    background:url(../images/icons/icon-arrow.png) no-repeat 80% center,
+        linear-gradient(to top, #ff7373 0%, #fda0a0 100%);
+    box-shadow: 0 1px 0 #385898, inset 0 1px 0 white, 0px 5px 0px 0px #9c694e, 0 8px 9px #d7a07e;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Bebas;
+    border-radius: 20px;
+    position: relative;
+}  
+.links-social a{
+    margin:0 19px 0 0;
+}
+.links-nav a{
+    font-family: Bebas;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;  
+    color: silver;
+    padding:0 28px 0 28px;
+    position: relative;
+    margin:2px;
+    height:28px;
+    text-decoration: none;
+
+}
+.links-nav a.active, .links-nav a:active, .links-nav a:hover, .links-nav a:focus{
+    background:
+        linear-gradient(#fddecb, #fddecb) bottom center / calc(100% - 28px) 28px no-repeat, 
+        linear-gradient(-45deg, #fddecb, #fddecb 50%, transparent 50%) left top / 14px 14px no-repeat,
+        linear-gradient(45deg, #fddecb, #fddecb 50%, transparent 50%) right top / 14px 14px no-repeat,
+        linear-gradient(135deg, #fddecb, #fddecb 50%, transparent 50%) right bottom / 14px 14px no-repeat,
+        linear-gradient(-135deg, #fddecb, #fddecb 50%, transparent 50%) left bottom / 14px 14px no-repeat;
+    color: black;
+}
+.links-nav a:before{
+    left: -14px;
+    border-right: 14px solid #fddecb;  
+}
+.links-nav a:after{
+    right: -14px;
+    border-left: 14px solid #fddecb;
+}
+.links-pagination a{
+    width: 29px;
+    height: 29px;
+    background-image: linear-gradient(to top, #ff7373 0%, #fda0a0 100%);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+    border-radius: 50%;
+    color: #34373f;
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    font-weight: 700;
+    margin:0 15px 0 0;
+}
+.links-pagination a:hover, .links-pagination a:focus, .links-pagination a.active{
+    background-image: linear-gradient(to top, #292832 0%, #393f45 100%);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);  
+    color: #fcb5b5;
+}
+.top-block{
+    text-shadow: 0.5px 0.9px 2px rgba(206, 97, 97, 0.75);
+    color: white;
+    font-family: "Trebuchet MS";
+    font-size: 25px;
+    font-weight: 700; 
+    text-align: center;
+    background:url(../images/shadow2.png) no-repeat center top,
+        url(../images/top-bg.png) repeat-x center 10px,
+        url(../images/top-bg.png) repeat-x center 92%,
+        #ff7373;
+    position: relative;
+}
+.top-block:after, .top-block:before{
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top:24px;
+}
+.top-block:before{
+    width:123px;
+    height:100px;
+    background:url("/images/pic5.png");
+    left:-89px;
+}
+.top-block:after{
+    width:122px;
+    height:101px;
+    background:url("/images/pic6.png");
+    right:-90px;
+}

@@ -1,0 +1,133 @@
+body{
+    background:url("../images/body.png");
+}
+.lwrap{
+    max-width:980px;
+    padding:0 10px;
+}
+header{
+    background-image: linear-gradient(to top, #292832 0%, #393f45 100%);
+}
+header .lwrap{
+    padding: 24px 10px 27px 10px;
+}
+.top-block.lwrap{
+    padding:0 43rem 7rem 49rem;
+    max-width: 960px;
+    margin-top: 49px;
+    margin-bottom: 75px;
+}
+.shadow{
+    width:100%;
+    height:39px;
+    background:url(../images/shadow.png) no-repeat 100%;
+    position: absolute;
+    left:0;
+    bottom: -39px;
+}
+.links-nav a:last-child{
+    margin:0;
+}
+.top-block p{
+    padding: 18px 0 18px;
+    width:100%;
+}
+.picture{
+    position: relative;
+}
+.picture img{
+    width:100%;
+    height:100%;
+}
+.post{
+    background:url("../images/border-bg.png") repeat-x center bottom;
+    margin:0 0 58rem 0;
+    position: relative;
+}
+.content .post:nth-of-type(4){
+    background:none;
+    margin:0 0 0 0;
+}
+.picture{
+    position:relative;
+    display: block;
+}
+.picture:after{
+    position: absolute;
+    content:"";
+    width:100%;
+    background:url("../images/shadow.png") 100% no-repeat;
+    height:39px;
+    left:0;
+    bottom: -36px;
+}
+.post-info{
+    padding: 43rem 0 58rem 0;
+}
+.post-info > div{
+    width: 52%;
+}
+.post-info h4{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+.post-info p{
+    font-size: 15px;
+    font-weight: 400;   
+}
+.post-info .btn-website{
+    margin: 12px 5px 0 0;
+    padding: 0 27px 0 0px;
+}
+.last-post{
+    background:none;
+    margin: 0 0 3px 0;
+}
+.pagination-wrap{
+    padding: 0 0 60rem 19px;
+}
+footer{
+    background:#34373f;
+    border-top:1px solid #fff;
+}
+footer .lwrap{
+    padding-bottom:49px;
+}
+.lnk-visit{
+    color: #818282;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: underline;
+    margin: 0 0 0 2px;
+}
+.lnk-visit i{
+
+    margin: 0 0px 0 9px;
+}
+.lnk-visit:hover{
+    text-decoration: none;
+}
+.rights{
+    color: #878787;
+    font-size: 15px;
+    font-weight: 400;    
+}
+footer .lwrap > div:first-child{
+    margin: 22px 0 0 0;
+}
+.links-social{
+    padding: 0 0 8px 0px;
+}
+.rights{
+    margin: 25px -2px 0 0px;
+    text-align:center;
+}
+@media(max-width:1200px){
+    .top-block::after, .top-block::before, .shadow{display: none;} 
+}
+@media(max-width:640px){
+    .links-nav a.active, .links-nav a:hover, .links-nav a:focus{
+        background:none;
+    }
+}
