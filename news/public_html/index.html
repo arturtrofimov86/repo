@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+         <link href="css/fonts.css" rel="stylesheet" type="text/css"/>
+        <link href="css/slider.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/>
+        <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="page-template-home">
+            <header>
+                <section class="header">
+                    <div class="header-top">
+                        <div class="left-side">
+                            <figure>
+                                <img src="images/flag.png" width="59" height="39" alt="Ingushetia"/>
+                            </figure>
+                            <div class="title">
+                                Информационный новостной портал Республики Ингушетия
+                            </div>
+                        </div>
+                        <form action="" method="post" name="header-search">
+                            <input type="image" src="images/search-img.png" alt="Submit">
+                            <input type="search">
+                        </form>
+                    </div>
+                    <div class="header-main">
+                        <div class="header-main-info">
+                            <a href="#" class="logo">
+                                <img src="images/logo.png" width="351" height="92" alt=""/>
+                            </a>
+                            <time class="time-date" id="date">
+                                <span>23 июня 2017 г.</span>/
+                                <span>понедельник</span>/
+                                <span>15:43</span>
+                            </time>
+                        </div>
+                        <div class="right-side">
+                            <nav class="navigation-header">
+                                <a href="#">Экономика</a>
+                                <a href="#" class="active">Политика</a>
+                                <a href="#">Происшествия</a>
+                                <a href="#">Культура</a>
+                                <a href="#">Спорт</a>
+                                <a href="#">Статьи</a>
+                            </nav>
+                            <div class="header-today-news">
+                                <div class="weather-place">
+                                    <div class="weahter-town">Малгобек<i class="icon-locator"></i><span class="temperature">+35</span></div>
+                                    <div class="weahter-town">Назрань<i class="icon-locator"></i><span class="temperature">+23</span></div>
+                                    <div class="weahter-town">Магас<i class="icon-locator"></i><span class="temperature">+12</span></div>
+                                    <div class="weahter-town">Карабулак<i class="icon-locator"></i><span class="temperature">-15</span></div>
+                                    <div class="weahter-town">Сунжа<i class="icon-locator"></i><span class="temperature">+19</span></div>
+                                </div>
+                                <dl class="cash">
+                                    <dt>Доллар:</dt>
+                                    <dd>56,13 P</dd>
+                                    <dt>Евро:</dt>
+                                    <dd>63,88 P</dd>
+                                    <dt>Heфть:</dt>
+                                    <dd>$ 53,89</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </header>
+            <section class="content">
+                <div class="news-main">
+                    <div class="slider-news">
+                        <h3 class="title-rubrics">Главные новости:</h3>
+                        <div id='slider25' class="lwrap">
+                            <input name="cs_anchor25" id="cs_slide25-0" type="radio">
+                            <input name="cs_anchor25" id="cs_slide25-1" type="radio">
+                            <input name="cs_anchor25" id="cs_slide25-2" type="radio">
+                            <input name="cs_anchor25" id="cs_slide25-3" type="radio">
+                            <input name="cs_anchor25" id="cs_slide25-4" type="radio">
+                            <input name="cs_anchor25" id="cs_play25" type="radio" checked="">
+                            <ul>
+                                <li>
+                                    <img src="images/slider1.png" alt=""/>
+                                </li>
+                                <li class="num0">
+                                    <img src="images/slider1.png" alt=""/>
+                                </li>
+                                <li class="num1">
+                                    <img src="images/slider1.png" alt=""/>
+                                </li>
+                                <li class="num2">
+                                    <img src="images/slider1.png" alt=""/>
+                                </li>
+                                <li class="num3">
+                                    <img src="images/slider1.png" alt=""/>
+                                </li>
+                                <li class="num4">
+                                    <img src="images/slider1.png" alt=""/>
+                                </li>
+                            </ul>
+                            <div class="prev">
+                                <label class="num0" for='cs_slide25-0'></label>
+                                <label class="num1" for='cs_slide25-1'></label>
+                                <label class="num2" for='cs_slide25-2'></label>
+                                <label class="num1" for='cs_slide25-3'></label>
+                                <label class="num2" for='cs_slide25-4'></label>
+                            </div>
+                            <div class="next">
+                                <label class="num0" for='cs_slide25-0'></label>
+                                <label class="num1" for='cs_slide25-1'></label>
+                                <label class="num2" for='cs_slide25-2'></label>
+                                <label class="num1" for='cs_slide25-3'></label>
+                                <label class="num2" for='cs_slide25-4'></label>
+                            </div>
+                            <div class="bullets" data-flex='center'>
+                                <label class="num0" for='cs_slide25-0'>
+
+                                </label>
+                                <label class="num1" for='cs_slide25-1'>
+
+                                </label>
+                                <label class="num2" for='cs_slide25-2'>
+
+                                </label>
+                                <label class="num3" for='cs_slide25-3'>
+
+                                </label>
+                                <label class="num4" for='cs_slide25-4'>
+
+                                </label>
+                            </div>
+                            <div class="description" data-childs="col -center center">
+                                <label class="num0">
+
+                                    <span class="lbl-date"><time>26/06/17</time><time>10:58</time></span>
+                                    <a href="#">В Ингушетии создана спецкомиссия по подсчету 
+                                        ущерба от стихийных последствий</a>
+
+                                </label>
+                                <label class="num1">
+                                    <span class="lbl-date"><time>26/06/17</time><time>10:58</time></span>
+                                    <a href="#">В Ингушетии создана спецкомиссия по подсчету 
+                                        ущерба от стихийных последствий</a>
+                                </label>
+                                <label class="num2">
+                                    <span class="lbl-date"><time>26/06/17</time><time>10:58</time></span>
+                                    <a href="#">В Ингушетии создана спецкомиссия по подсчету 
+                                        ущерба от стихийных последствий</a>
+                                </label>
+                                <label class="num3">
+                                    <span class="lbl-date"><time>26/06/17</time><time>10:58</time></span>
+                                    <a href="#">В Ингушетии создана спецкомиссия по подсчету 
+                                        ущерба от стихийных последствий</a>
+                                </label>
+                                <label class="num4">
+                                    <span class="lbl-date"><time>26/06/17</time><time>10:58</time></span>
+                                    <a href="#">В Ингушетии создана спецкомиссия по подсчету 
+                                        ущерба от стихийных последствий</a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-list">
+                        <h3 class="title-rubrics">Коротко о главном:</h3>
+                        <ul>
+                            <li>
+                                <time>26/06/17<br>10:58</time>
+                                <a href="#" class="news-title">Игорь Сечин не считает системными мерами договоренности по ОПЕК+</a>
+                            </li>
+                            <li>
+                                <time>26/06/17<br>10:58</time>
+                                <a href="#" class="news-title">СКР предъявил обвинения двум фигурантам дела бывшего губернатора Михаила Юревича</a>
+                            </li>
+                            <li>
+                                <time>26/06/17<br>10:58</time>
+                                <a href="#" class="news-title">Минэнерго и Минфин согласовали позиции по налогооблажению нефтяной отрасли</a>
+                            </li>
+                            <li>
+                                <time>26/06/17<br>10:58</time>
+                                <a href="#" class="news-title">В ХК «Динамо» прошли обыски</a>
+                            </li>
+                            <li>
+                                <time>26/06/17<br>10:58</time>
+                                <a href="#" class="news-title">Игорь Сечин не считает системными мерами договоренности по ОПЕК+</a>
+                            </li>
+                            <li>
+                                <time>26/06/17<br>10:58</time>
+                                <a href="#" class="news-title">СКР предъявил обвинения двум фигурантам дела бывшего губернатора Михаила Юревича</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="news-popular">
+                    <div class="gallery-news-wrap">
+                        <div class="gallery-news">
+                            <div class="article-news">
+                                <figure>
+                                    <img src="images/img1.png" width="208" height="142" alt=""/>
+                                    <span class="lbl-date">
+                                        <time>26/06/17</time>
+                                        <time>10:58</time>
+                                    </span>
+                                </figure>
+                                <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                            </div>
+                            <div class="article-news">
+                                <figure>
+                                    <img src="images/img1.png" width="208" height="142" alt=""/>
+                                    <span class="lbl-date">
+                                        <time>26/06/17</time>
+                                        <time>10:58</time>
+                                    </span>
+                                </figure>
+                                <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                            </div>
+                            <div class="article-news">
+                                <figure>
+                                    <img src="images/img1.png" width="208" height="142" alt=""/>
+                                    <span class="lbl-date">
+                                        <time>26/06/17</time>
+                                        <time>10:58</time>
+                                    </span>
+                                </figure>
+                                <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                            </div>
+                            <div class="article-news">
+                                <figure>
+                                    <img src="images/img1.png" width="208" height="142" alt=""/>
+                                    <span class="lbl-date">
+                                        <time>26/06/17</time>
+                                        <time>10:58</time>
+                                    </span>
+                                </figure>
+                                <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                            </div>
+                            <div class="article-news">
+                                <figure>
+                                    <img src="images/img1.png" width="208" height="142" alt=""/>
+                                    <span class="lbl-date">
+                                        <time>26/06/17</time>
+                                        <time>10:58</time>
+                                    </span>
+                                </figure>
+                                <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                            </div>
+                            <div class="article-news">
+                                <figure>
+                                    <img src="images/img1.png" width="208" height="142" alt=""/>
+                                    <span class="lbl-date">
+                                        <time>26/06/17</time>
+                                        <time>10:58</time>
+                                    </span>
+                                </figure>
+                                <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                            </div>
+                            <div class="article-news">
+                                <figure>
+                                    <img src="images/img1.png" width="208" height="142" alt=""/>
+                                    <span class="lbl-date">
+                                        <time>26/06/17</time>
+                                        <time>10:58</time>
+                                    </span>
+                                </figure>
+                                <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                            </div>
+                            <div class="article-news">
+                                <figure>
+                                    <img src="images/img1.png" width="208" height="142" alt=""/>
+                                    <span class="lbl-date">
+                                        <time>26/06/17</time>
+                                        <time>10:58</time>
+                                    </span>
+                                </figure>
+                                <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                            </div>
+                            <div class="article-news">
+                                <figure>
+                                    <img src="images/img1.png" width="208" height="142" alt=""/>
+                                    <span class="lbl-date">
+                                        <time>26/06/17</time>
+                                        <time>10:58</time>
+                                    </span>
+                                </figure>
+                                <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-list">
+                        <h3 class="title-rubrics">Популярное за неделю:</h3>
+                        <ul>
+                            <li>
+                                <time>26/06/17<br>10:58</time>
+                                <a href="#" class="news-title">Игорь Сечин не считает системными мерами договоренности по ОПЕК+</a>
+                            </li>
+                            <li>
+                                <time>26/06/17<br>10:58</time>
+                                <a href="#" class="news-title">СКР предъявил обвинения двум фигурантам дела бывшего губернатора Михаила Юревича</a>
+                            </li>
+                            <li>
+                                <time>26/06/17<br>10:58</time>
+                                <a href="#" class="news-title">Минэнерго и Минфин согласовали позиции по налогооблажению нефтяной отрасли</a>
+                            </li>
+                            <li>
+                                <time>26/06/17<br>10:58</time>
+                                <a href="#" class="news-title">В ХК «Динамо» прошли обыски</a>
+                            </li>
+                            <li>
+                                <time>26/06/17<br>10:58</time>
+                                <a href="#" class="news-title">Игорь Сечин не считает системными мерами договоренности по ОПЕК+</a>
+                            </li>
+                            <li>
+                                <time>26/06/17<br>10:58</time>
+                                <a href="#" class="news-title">СКР предъявил обвинения двум фигурантам дела бывшего губернатора Михаила Юревича</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="news-more">
+                    <div class="warning-info">
+                        <div class="lbl-warning"><i class="fa fa-exclamation" aria-hidden="true"></i></div>
+                        <ul>
+                            <li><a href="#">Топ-5 мест для отдыха в Ингушетии</a></li>
+                            <li><a href="#">Когда в Ингушетию придет жара</a></li>
+                            <li><a href="#">График отключения воды в Назрани</a></li>
+                            <li><a href="#">Ремонт дорог в Малгобеке</a></li>
+                        </ul>
+                    </div>
+                    <div class="gallery-news">
+                        <div class="article-news">
+                            <figure>
+                                <img src="images/img1.png" width="208" height="142" alt=""/>
+                                <span class="lbl-date">
+                                    <time>26/06/17</time>
+                                    <time>10:58</time>
+                                </span>
+                            </figure>
+                            <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                        </div>
+                        <div class="article-news">
+                            <figure>
+                                <img src="images/img1.png" width="208" height="142" alt=""/>
+                                <span class="lbl-date">
+                                    <time>26/06/17</time>
+                                    <time>10:58</time>
+                                </span>
+                            </figure>
+                            <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                        </div>
+                        <div class="article-news">
+                            <figure>
+                                <img src="images/img1.png" width="208" height="142" alt=""/>
+                                <span class="lbl-date">
+                                    <time>26/06/17</time>
+                                    <time>10:58</time>
+                                </span>
+                            </figure>
+                            <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                        </div>
+                        <div class="article-news">
+                            <figure>
+                                <img src="images/img1.png" width="208" height="142" alt=""/>
+                                <span class="lbl-date">
+                                    <time>26/06/17</time>
+                                    <time>10:58</time>
+                                </span>
+                            </figure>
+                            <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                        </div>
+                        <div class="article-news">
+                            <figure>
+                                <img src="images/img1.png" width="208" height="142" alt=""/>
+                                <span class="lbl-date">
+                                    <time>26/06/17</time>
+                                    <time>10:58</time>
+                                </span>
+                            </figure>
+                            <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                        </div>
+                        <div class="article-news">
+                            <figure>
+                                <img src="images/img1.png" width="208" height="142" alt=""/>
+                                <span class="lbl-date">
+                                    <time>26/06/17</time>
+                                    <time>10:58</time>
+                                </span>
+                            </figure>
+                            <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                        </div>
+                        <div class="article-news">
+                            <figure>
+                                <img src="images/img1.png" width="208" height="142" alt=""/>
+                                <span class="lbl-date">
+                                    <time>26/06/17</time>
+                                    <time>10:58</time>
+                                </span>
+                            </figure>
+                            <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                        </div>
+                        <div class="article-news">
+                            <figure>
+                                <img src="images/img1.png" width="208" height="142" alt=""/>
+                                <span class="lbl-date">
+                                    <time>26/06/17</time>
+                                    <time>10:58</time>
+                                </span>
+                            </figure>
+                            <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                        </div>
+                        <div class="article-news">
+                            <figure>
+                                <img src="images/img1.png" width="208" height="142" alt=""/>
+                                <span class="lbl-date">
+                                    <time>26/06/17</time>
+                                    <time>10:58</time>
+                                </span>
+                            </figure>
+                            <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                        </div>
+                        <div class="article-news">
+                            <figure>
+                                <img src="images/img1.png" width="208" height="142" alt=""/>
+                                <span class="lbl-date">
+                                    <time>26/06/17</time>
+                                    <time>10:58</time>
+                                </span>
+                            </figure>
+                            <h5 class="news-title"><a href="#">Выход США из климатического соглашения возмутил международное сообщество</a></h5>
+                        </div>
+                        <div class="button-wrap">
+                            <a href="#"><span class="btn-more"><i class="fa fa-plus" aria-hidden="true"></i></span><span class="text">Еще новости</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tw-news">
+                    <div class="">
+                        <div class="video-container">
+                            <div class="video-wrap">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/74K4617Ps0U" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="playlist">
+                            <div class="news-video news-video-playing">
+                                <button class="play">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </button>
+                                <button class="pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
+                                <h5 class="video-title">Выпуск Вести Башкортостан от 13/06/17</h5>
+                            </div>
+                            <div class="news-video">
+                                <button class="play">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </button>
+                                <button class="pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
+                                <h5 class="video-title">Выпуск Вести Башкортостан от 13/06/17</h5>
+                            </div>
+                            <div class="news-video">
+                                <button class="play">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </button>
+                                <button class="pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
+                                <h5 class="video-title">Выпуск Вести Башкортостан от 13/06/17</h5>
+                            </div>
+                            <div class="news-video">
+                                <button class="play">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </button>
+                                <button class="pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
+                                <h5 class="video-title">Выпуск Вести Башкортостан от 13/06/17</h5>
+                            </div>
+                            <div class="news-video">
+                                <button class="play">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </button>
+                                <button class="pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
+                                <h5 class="video-title">Выпуск Вести Башкортостан от 13/06/17</h5>
+                            </div>
+                            <div class="news-video">
+                                <button class="play">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </button>
+                                <button class="pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
+                                <h5 class="video-title">Выпуск Вести Башкортостан от 13/06/17</h5>
+                            </div>
+                            <div class="news-video">
+                                <button class="play">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </button>
+                                <button class="pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
+                                <h5 class="video-title">Выпуск Вести Башкортостан от 13/06/17</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="articles">
+                    <div class="all-articles">
+                        <div class="top-articles">
+                            <h3 class="title-rubrics">Статьи</h3>
+                            <a href="#">Все статьи</a>
+                        </div>
+                        <div class="article-news">
+                            <figure><img src="images/img2.png" width="232" height="132"/></figure>
+                            <div class="article-info">
+                                <div class="lbl-theme">Интервью</div>
+                                <h5><a href="#">Елена Мироненко: «Я — отчаянная идеалистка»</a></h5>
+                                <p>Министр культуры Красноярского края постоянно в движении. Недавно Елена Мироненко была в Ачинске, Иркутске, Шушенском и Новосибирске.</p>
+                            </div>
+                        </div>
+                        <div class="article-news">
+                            <figure><img src="images/img2.png" width="232" height="132"/></figure>
+                            <div class="article-info">
+                                <div class="lbl-theme">Интервью</div>
+                                <h5><a href="#">Елена Мироненко: «Я — отчаянная идеалистка»</a></h5>
+                                <p>Министр культуры Красноярского края постоянно в движении. Недавно Елена Мироненко была в Ачинске, Иркутске, Шушенском и Новосибирске.</p>
+                            </div>
+                        </div>
+                        <div class="article-news">
+                            <figure><img src="images/img2.png" width="232" height="132"/></figure>
+                            <div class="article-info">
+                                <div class="lbl-theme">Интервью</div>
+                                <h5><a href="#">Елена Мироненко: «Я — отчаянная идеалистка»</a></h5>
+                                <p>Министр культуры Красноярского края постоянно в движении. Недавно Елена Мироненко была в Ачинске, Иркутске, Шушенском и Новосибирске.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="people-opinion">
+                        <h3 class="title-rubrics">Общественное мнение</h3>
+                        <div class="questions">
+                            Нужно ли похоронить В.И. Ленина?
+                        </div>
+                        <div class="results">
+                            <div class="most-result">
+                                <span class="result-quantity">60%</span>
+                                <div class="container">
+                                    <span class="text">Да давно пора</span>
+                                    <div class="skills"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="result-quantity">25%</span>
+                                <div class="container">
+                                    <span class="text">Нет это недопустимо</span>
+                                    <div class="skills"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="result-quantity">10%</span>
+                                <div class="container">
+                                    <span class="text">Скорее да чем нет</span>
+                                    <div class="skills"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="result-quantity">5%</span>
+                                <div class="container">
+                                    <span class="text">Скорее нет чем да</span>
+                                    <div class="skills"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="result-quantity">0%</span>
+                                <div class="container">
+                                    <span class="text">Не знаю</span>
+                                    <div class="skills"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total">Проголосовало <span>286</span> человек</div>
+
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footer">
+                    <div>
+                        <a href="#" class="logo-alt">
+                            <img src="images/logo-alt.png" width="249" height="70" alt=""/>
+                        </a>
+                        <p>
+                            Информация, размещаемая на ресурсе Хомаш, предназначена для персонального использования. Запрещается копирование и/или воспроизведение информации без активной ссылки на данный ресурс. Администратор сайта Хомаш вправе удалить комментарий без объяснения причин.
+                        </p>
+                        <div class="about_us">
+                            <span>О нас</span>
+                            <ul class="list-social">
+                                <li class="vk"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                                <li class="fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li class="telegram"><a href="#"><i class="icon-telegram"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li class="ok"><a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="navigation-footer">
+                            <li><a href="#">Экономика</a></li>
+                            <li><a href="#">Политика</a></li>
+                            <li><a href="#">Происшествия</a></li>
+                            <li><a href="#">Культура</a></li>
+                            <li><a href="#">Спорт</a></li>
+                            <li><a href="#">Статьи</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <form action="" method="post" name="footer-search">
+                            <input type="image" src="images/search-img.png" alt="Submit">
+                            <input type="search">
+                        </form>
+                        <div class="our-contacts">
+                            <div class="phone"><i class="fa fa-mobile" aria-hidden="true"></i> +7988 825 38 93</div>
+                            <div class="phone viber-whatsapp"><i class="icon-viber"></i><i class="icon-whatsapp"></i>+7 988 825 38 93</div>
+                            <a href="#" class="email telegram"><i class="icon-telegram"></i>t.me/hoamash24</a>
+                            <a href="mailto:" class="email"><i class="fa fa-envelope-o" aria-hidden="true"></i>news@homash.ru</a>
+                        </div>
+                        <div class="rights">
+                            <span class="rights-info">ООО "Хомаш" &copy 2017</span>
+                            <span class="age">18+</span>
+                            <a href="#" class="live-internet">
+                                <img src="images/live-internet.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+
+        <script>
+
+        </script>
+    </body>
+</html>

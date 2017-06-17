@@ -1,0 +1,66 @@
+@font-face{
+    font-family:'Iconmoon';
+    src:url(../fonts/iconmoon.otf),
+        url(../fonts/iconmoon.ttf),
+        url(../fonts/iconmoon.woff),
+        url(../fonts/iconmoon.svg);
+    font-weight:100;
+}
+@font-face{
+    font-family:'Alice';
+    src:url(../fonts/Alice.otf),
+        url(../fonts/Alice.ttf),
+        url(../fonts/Alice.woff),
+        url(../fonts/Alice.svg);
+    font-weight:100;
+}
+@font-face{
+    font-family:'Proxima Nova Thin';
+    src:url(../fonts/ProximaNovaThin.otf),
+        url(../fonts/ProximaNovaThin.ttf),
+        url(../fonts/ProximaNovaThin.woff),
+        url(../fonts/ProximaNovaThin.svg);
+    font-weight:100;
+}
+@font-face{
+    font-family:'Proxima Nova Light';
+    src:url(../fonts/ProximaNovaLightIt.otf),
+        url(../fonts/ProximaNovaLightIt.ttf),
+        url(../fonts/ProximaNovaLightIt.woff),
+        url(../fonts/ProximaNovaLightIt.svg);
+    font-weight:300;
+    font-style:italic;
+}
+@font-face{
+    font-family:'Proxima Nova Bold';
+    src:url(../fonts/ProximaNovaBold.otf),
+        url(../fonts/ProximaNovaBold.ttf),
+        url(../fonts/ProximaNovaBold.woff),
+        url(../fonts/ProximaNovaTBold.svg);
+    font-weight:900;
+}
+
+@font-face{
+    font-family:'Proxima Nova Regular';
+    src:url(../fonts/ProximaNovaRegular.otf),
+        url(../fonts/ProximaNovaRegular.ttf),
+        url(../fonts/ProximaNovaRegular.woff),
+        url(../fonts/ProximaNovaRegular.svg);
+    font-weight:400;
+}
+@font-face{
+    font-family:'Proxima Nova Light';
+    font-weight:300;
+    src:url(../fonts/ProximaNovaLight.otf),
+        url(../fonts/ProximaNovaLight.ttf),
+        url(../fonts/ProximaNovaLight.woff),
+        url(../fonts/ProximaNovaLight.svg);
+}
+@font-face{
+    font-family:'Proxima Nova Semibold';
+    font-weight:700;
+    src:url(../fonts/ProximaNovaSemibold.otf),
+        url(../fonts/ProximaNovaSemibold.ttf),
+        url(../fonts/ProximaNovaSemibold.woff),
+        url(../fonts/ProximaNovaSemibold.svg);
+}
