@@ -35,6 +35,7 @@ ul.bxslider {
     position: absolute;
     bottom:19px;
     width: 100%;
+    left: 14%;
 }
 /* LOADER */
 .bx-wrapper .bx-loading {
@@ -62,7 +63,7 @@ ul.bxslider {
     display: block;
     width:25px;
     height:8px;
-    margin: 0 5px;
+    margin: 0 3px;
     outline: 0;
 }
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
@@ -97,7 +98,7 @@ ul.bxslider {
 
 .bx-wrapper .bx-controls-direction a {
     position: absolute;
-    top: 50%;
+    top:97%;
     margin-top: -16px;
     outline: 0;
     width: 32px;
