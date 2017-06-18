@@ -10,8 +10,13 @@ dt:before {
 dt, dd {
     display: inline;
 }
-.icon-telegram, .icon-locator, .icon-viber, .icon-whatsapp, .icon-arrow-down{
+.icon-telegram, .icon-locator, .icon-viber, .icon-whatsapp, .icon-arrow-down, .icon-locator-alt{
     display: inline-block;
+}
+.icon-locator-alt{
+    width:13px;
+    height:18px;
+    background:url(../images/icon-locatore2.png);
 }
 .icon-telegram{
     width:21px;
@@ -337,33 +342,9 @@ footer{
                         display: inline-block;
                         margin: 0 13px 0 0;
 
-                        a{
 
-                            i{
-                                font-size:26px;
-                            }
-                        }
                     }
-                    .vk{
-                        i{
-                            color: #4786ce;
-                        }
-                    }
-                    .fb{
-                        i{
-                            color: #328ebf;
-                        }
-                    }
-                    .twitter{
-                        i{
-                            color: #21c8ff;
-                        }
-                    }
-                    .ok{
-                        i{
-                            color: #ff8400;
-                        }
-                    }
+
                 }
             }
         }
@@ -552,6 +533,36 @@ h3.title-rubrics{
     border-radius: 50%;
     font-size:20px;
     font-weight: bold;
+}
+.list-social {
+    padding:3px 0 0 1px;
+    li{
+        display: inline-block;
+        margin: 0 15px 0 0;
+
+    }
+    .vk{
+        i{
+            font-size: 26px;
+            color: #4786ce;
+        }
+    }
+    .fb{
+        i{
+            color:#328ebf;
+            font-size:21px;
+        }
+    }
+    .twitter i{
+        color:#21c8ff;
+        font-size:25px;
+    }
+    .ok{
+        i{
+            color:#ff8400;
+            font-size:20px;
+        }
+    }
 }
 /****ARTICLE-NEWS*****/
 .article-news{
@@ -1185,12 +1196,142 @@ h3.title-rubrics{
     .content{
         .contact-information{
             border-top:10px solid @green;
-            max-width:1220px;
+            max-width:1200px;
             margin:0 auto;
+            padding:36px 0 57px 0;
+            .top-info{
+                display:flex;
+                justify-content:space-between;
+                font-family:Proxima Nova Light;
+                font-size:16px;
+                padding: 0 0 34px 0;
+                color:@black;
+                @media(max-width:1200px){
+                    flex-wrap:wrap;
+                }
+                .logo{
+                    color:@black;
+                    font-family: Alice;
+                    font-size: 70px;
+                    text-transform: uppercase;
+                    padding: 12px 0 0 11px; 
+                    @media(max-width:1200px){
+                        width:100%;
+                        text-align:center;
+                        padding:0;
+                    }
+                    span{
+                        font-size: 27px;
+                        display: block;
+                        margin: 27px 0 0 0;
+                        text-transform: none;
+                    }
+                }
+                h5{
+                    font-family: Alice;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                }
+                .call_us{
+                    width: 44%;
+                    padding: 14px 0 0 5px;
+                    @media(max-width:1200px){
+                        width:50%;
+                        padding:20px 0 0 10px;
+                    }
+                    @media(max-width:640px){
+                        width:100%;
+                    }
+                    > div{
+                        display: flex;
+                        align-items:flex-start;
+                        padding: 2px 0 0 1px;
+                        @media(max-width:1200px){
+                            flex-direction:column;
+                        }
+                        .town-contact{
+                            padding:0 9px 0 0;
+                            i{
+                                margin: 5px 12px -4px 0;
+                            }
+                        }
+                        .links{
+                            a{
+                                display: block;
+                                color:@black;
+                                margin:0 0 5px 0;
+                                .fa-envelope-o{
+                                    color: #179028;
+                                    font-size: 15px;
+                                    margin: 6px 12px 0 2px;
+                                }
+                                .icon-telegram{
+                                    margin: 5px 9px -5px 0;
+                                }
+                            }
+                        }
+                        .phones{
+                            padding:0 24px 0 0;
+                            .fa-mobile{
+                                color: #179028;
+                                font-size: 28px;
+                                margin: 0 14px -1px 14px;
+
+                            }
+                            .viber-whatsapp{
+                                margin:0 0 0 0;
+                                i{
+                                    margin:0 0 0 0;
+                                    margin: 3px 1px -3px 1px;
+                                }
+                                .icon-whatsapp{
+                                    margin: 6px 10px 0 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .follow-us{
+                    width: 16.8%;
+                    padding: 14px 0 0 0;
+                    @media(max-width:1200px){
+                        width:30%;
+                        padding:20px 0 0 0;
+                    }
+                    @media(max-width:640px){
+                        width:100%;
+                    }
+                    .list-social {
+                        padding:3px 0 0 1px;
+                        li{
+                            display: inline-block;
+                            margin: 0 15px 0 0;
+
+                        }
+
+                    }
+                }
+            }
+            p{
+                padding:0 0 0 0;
+                font-family: Proxima Nova Light;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 21px;
+                color:@black;
+                padding: 0 0 20px 11px;
+
+            }
+            p::first-line{
+                padding:0 0 0 22px;
+            }
             form{
                 display:flex;
                 flex-wrap:wrap;
                 justify-content:space-between;
+                padding: 44px 14px 0 10px;
                 h3{
                     color:@black;
                     font-family: Alice;
@@ -1198,19 +1339,24 @@ h3.title-rubrics{
                     font-weight: 400;
                     text-transform: uppercase; 
                     width:100%;
-                    padding:0 0 43px 0;
+                    padding:0 0 43px 10px;
                 }
                 div{
                     font-family:Proxima Nova Light;
                     font-size:16px;
                     position:relative;
                     &:nth-of-type(1){
-                        max-width:300px;
-                        width:21%;
+                        width: 22.6%;
+                        @media(max-width:992px){
+                            width:100%;
+                        }
                     }
                     &:nth-of-type(2){
 
-                        width:75%;
+                        width:73.4%;
+                        @media(max-width:992px){
+                            width:100%;
+                        }
                     }
                     input, textarea{
                         border: 1px solid @black;
@@ -1218,6 +1364,8 @@ h3.title-rubrics{
                         color:#333;
                         width:100%;
                         background:@white;
+                        font-family: Proxima Nova Light;
+                        font-size: 16px;
                         &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
                             color:#333;
                         }
@@ -1234,14 +1382,15 @@ h3.title-rubrics{
                     }
                     input{
                         display: block;
-                        height: 51px;
-                        margin: 0 0 9px;
-                        padding: 0 17px;
+                        height: 48px;
+                        margin: 0 0 12px;
+                        padding: 0 15px 0 19px;
                     }
                     textarea{
-                        height:112px;
+                        height: 92px;
                         flex-grow: 1;
                         resize: none;
+                        padding: 10px 12px 8px 15px;
                     }
                     button{
                         width:99px;
