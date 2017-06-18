@@ -487,6 +487,21 @@ h3.title-rubrics{
     position:relative;
 
 }
+h3.title-rubrics.green-title{
+    background:@green;
+    color:@white;
+
+
+}
+h3.green-title.corner{
+    &:after{
+        border-left: 0 solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid @green;
+        left: 0;
+        position: absolute;  
+    }
+}
 .btn{
     display: flex;
     align-items: center;
@@ -1446,9 +1461,12 @@ h3.title-rubrics{
                     flex-shrink: 0;
                     @media(max-width:992px){
                         width:100%;
+                        display:flex;
+                        justify-content:space-between;
                     }
                     .article-news{
                         margin:0 0 16px 0
+
 
                     }
 
@@ -1506,6 +1524,198 @@ h3.title-rubrics{
                 }
             }
         }  
+    }
+}
+.page-template-article{
+    .content{
+        max-width:1220px;
+        margin:0 auto;
+        .incidents{
+            .sidebar{
+                width:25%;
+                background:#d3dbe2;
+                h4{
+                    color: #202020;
+                    font-family: Proxima Nova Bold;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                }
+                .lbl-wrap{
+                    display:flex;
+                    justify-content:flex-end;
+                    .lbl-date{
+                        font-size:16px;
+                        color:#fefefe;
+                        height:44px;
+                        width:262px;
+                        time{
+                            &:nth-last-of-type(2){
+                                font-family: Proxima Nova Bold; 
+                            }
+                            &:nth-last-of-type(1){
+                                font-family: Proxima Nova Regular;
+                            }
+                        }
+                    }
+                    .lbl-date.corner{
+                        &:after{
+                            border-left: 10px solid transparent;
+                            border-right: 0 solid transparent;
+                            border-top: 10px solid #179028;
+                            bottom: -10px;
+                            position: absolute;
+                            right: 0;
+                        }
+                    }
+                }
+                .tags{
+                    a{
+                        font-family:Proxima Nova Light;
+                        color:@black;
+                        font-size:14px;
+                        &:Hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                dl{
+                    color:@black;
+                    font-size:14px;
+                    font-family:Proxima Nova Light;
+                    dt{
+                        font-family:Proxima Nova Bold;
+                    }
+                }
+
+            }
+        }
+        .article-content{
+            display:flex;
+            justify-content:space-between;
+            .sidebar{
+                width:25%;
+                background:#fff;
+
+                .news-list{
+                    li{
+                        a{
+                            color: #666;
+                            font-family: Proxima Nova Regular;
+                            font-size: 14px;
+                            &:Hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+            }
+            .article-main{
+                width:72%;
+                p{
+                    color:@black;
+                    font-size:16px;
+                    font-family:Proxima Nova Light;
+                    padding:0 0 40px 0;
+                }
+                .photo-article{
+                    .photo-title{
+                        color:@black;
+                        font-family: Proxima Nova Regular;
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 24px;
+                        background-color: #ccc;
+                    }
+                }
+                .comment-block{
+                    .comment-block-heading{
+                        display: flex;
+                        justify-content: space-between;
+                        .visited-quantity{
+                            font-size:16px;
+                            font-family: Proxima Nova Light;
+                            color:@black;
+                            .fa-eye{
+                                font-size:20px;
+                                color:@green;
+                            }
+                        }
+                        .social-wrap{
+                            display:flex;
+                            .follow{
+                                color:@black;
+                                font-family: Proxima Nova Bold;
+                                font-size: 18px; 
+                            }
+                        }
+                    }
+                }
+                .comments{
+                    .comment-heading{
+                        display: flex;
+                        .comment-quantity{
+                            color:@black;
+                            font-family: Proxima Nova Bold;
+                            font-size: 18px;
+                            text-transform: uppercase; 
+                        }
+                    }
+                    .comment{
+                        .comment-author{
+                            color: #262626;
+                            font-family: Proxima Nova Bold;
+                            font-size: 18px;
+                            line-height: 30px; 
+                            time{
+                                color: #666;
+                                font-family: Proxima Nova Regular;
+                                font-size: 14px;
+                                line-height: 30px; 
+                            }
+                        }
+                        .comment-content{
+                            display:flex;
+                            p{
+                                font-family:'Proxima Nova Light';
+                                font-style:italic;
+                                color: #262626;
+                                font-size:16px;
+                            }
+                            .like{
+                                border:none;
+                                background:transparent;
+                                display:flex;
+                                color: #999;
+                                font-family: Proxima Nova Bold;
+                                font-size: 16px;
+                                line-height: 24px;
+                                i{
+                                    font-size:20px;
+                                    color:#999999;
+                                    &:hover{
+
+                                        color:@green;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.corner{
+    position:relative;
+    &:after{
+        width:0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid transparent;
+        display: block;
+        content:"";
     }
 }
 
