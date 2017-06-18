@@ -1505,7 +1505,8 @@ h3.red-title.corner{
                         height: 92px;
                         flex-grow: 1;
                         resize: none;
-                        padding: 10px 12px 8px 15px;
+                        padding: 10px 100px 8px 15px;
+                        width:87%
                     }
                     button{
                         width:99px;
@@ -1661,26 +1662,33 @@ h3.red-title.corner{
 }
 .page-template-article{
     .content{
-        max-width:1220px;
-        margin:0 auto;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px;
         .incidents{
+            display:flex;
+            padding: 34px 0 0 0;
+            align-items:start;
             .sidebar{
-                width:25%;
-                background:#d3dbe2;
+                width: 21.8%;
+                background: #d3dbe2;
+                padding: 49px 0 34px 40px;
                 h4{
                     color: #202020;
                     font-family: Proxima Nova Bold;
                     font-size: 24px;
                     text-transform: uppercase;
+                    padding: 0 0 36px 17px;
                 }
                 .lbl-wrap{
                     display:flex;
                     justify-content:flex-end;
                     .lbl-date{
-                        font-size:16px;
-                        color:#fefefe;
-                        height:44px;
-                        width:262px;
+                        font-size: 16px;
+                        color: #fefefe;
+                        height: 44px;
+                        width: 262px;
+                        padding: 0 58px 0 18px;
                         time{
                             &:nth-last-of-type(2){
                                 font-family: Proxima Nova Bold; 
@@ -1713,24 +1721,34 @@ h3.red-title.corner{
                 }
                 dl{
                     color:@black;
-                    font-size:14px;
-                    font-family:Proxima Nova Light;
+                    font-size: 14px;
+                    font-family: Proxima Nova Light;
+                    padding: 28px 0 0 18px;
+                    line-height: 27px;
                     dt{
                         font-family:Proxima Nova Bold;
                     }
                 }
+                .tags{
+                    padding: 12px 0 0 18px;
+                }
 
             }
+
         }
         .article-content{
             display:flex;
             justify-content:space-between;
+            padding:0px 0 0 0;
+
             .sidebar{
                 width:25%;
                 background:#fff;
 
                 .news-list{
+                    padding: 30px 0 0 15px;
                     li{
+                        margin:0 0 20px 0;
                         a{
                             color: #666;
                             font-family: Proxima Nova Regular;
@@ -1741,17 +1759,35 @@ h3.red-title.corner{
                         }
                     }
                 }
+                .banner-place {
+                    a{
+                        display: block;
+
+                        margin: 71px 0 0 21px;
+
+                    }
+                }
 
             }
             .article-main{
-                width:72%;
+                width:75%;
+                padding: 30px 0 0 0px;
                 p{
                     color:@black;
-                    font-size:16px;
-                    font-family:Proxima Nova Light;
-                    padding:0 0 40px 0;
+                    font-size: 16px;
+                    font-family: Proxima Nova Light;
+                    padding: 0 0 24px 21px;
+                    line-height: 24px;
+                    .text-link{
+                        color: #179028;
+                        text-decoration: underline;
+                    }
                 }
                 .photo-article{
+                    padding: 0 0 25px 20px;
+                    figure{
+                        max-width:582px;
+                    }
                     .photo-title{
                         color:@black;
                         font-family: Proxima Nova Regular;
@@ -1759,9 +1795,13 @@ h3.red-title.corner{
                         font-weight: 300;
                         line-height: 24px;
                         background-color: #ccc;
+                        padding: 8px 0 7px 24px;
+
                     }
                 }
                 .comment-block{
+                    padding: 0 0 0 19px;
+
                     .comment-block-heading{
                         display: flex;
                         justify-content: space-between;
@@ -1769,17 +1809,41 @@ h3.red-title.corner{
                             font-size:16px;
                             font-family: Proxima Nova Light;
                             color:@black;
+                            padding: 6px 30px 0 0;
                             .fa-eye{
-                                font-size:20px;
+                                font-size: 20px;
+                                margin: 1px 9px 0 0;
                                 color:@green;
                             }
                         }
                         .social-wrap{
                             display:flex;
+                            padding: 9px 0 23px 2px;
                             .follow{
                                 color:@black;
                                 font-family: Proxima Nova Bold;
                                 font-size: 18px; 
+                            }
+                            .list-social{
+                                margin: -7px 0 7px 32px;
+                                .vk i{
+                                    font-size:24px;
+                                }
+                                .fb i{
+                                    font-size:22px;
+                                }
+                                .telegramm i{
+
+                                    margin: 3px 0 -2px -1px;
+                                }
+                                .icon-whatsapp, .icon-viber{
+                                    width:20px;
+                                    height:20px;
+                                    background-size:cover;
+
+                                    margin: 3px 0 -2px 0
+                                }
+
                             }
                         }
                     }
@@ -1787,33 +1851,48 @@ h3.red-title.corner{
                 .comments{
                     .comment-heading{
                         display: flex;
+                        padding: 0 0 33px 0;
+                        h3{
+                            margin: 0 23px 0 -18px;
+                            padding: 1px 21px 0 25px;
+                            font-size: 20px;
+                        }
                         .comment-quantity{
                             color:@black;
                             font-family: Proxima Nova Bold;
                             font-size: 18px;
                             text-transform: uppercase; 
+                            padding: 15px 0 0 2px;
+
                         }
                     }
                     .comment{
+                        margin: 0 0 27px 0;
+
                         .comment-author{
                             color: #262626;
                             font-family: Proxima Nova Bold;
                             font-size: 18px;
-                            line-height: 30px; 
+                            line-height: 30px;
+                            padding: 0 0 0 2px;
                             time{
                                 color: #666;
                                 font-family: Proxima Nova Regular;
                                 font-size: 14px;
                                 line-height: 30px; 
+                                padding: 0 0 0 11px;
                             }
                         }
                         .comment-content{
                             display:flex;
+                            align-items:flex-start;
                             p{
                                 font-family:'Proxima Nova Light';
                                 font-style:italic;
                                 color: #262626;
                                 font-size:16px;
+                                max-width: 89%;
+                                padding: 1px 0px 0 3px;
                             }
                             .like{
                                 border:none;
@@ -1823,9 +1902,12 @@ h3.red-title.corner{
                                 font-family: Proxima Nova Bold;
                                 font-size: 16px;
                                 line-height: 24px;
+                                margin:0 0 0 2px;
                                 i{
-                                    font-size:20px;
-                                    color:#999999;
+                                    font-size: 20px;
+                                    color: #999;
+                                    margin: 4px 9px 0 0;
+
                                     &:hover{
 
                                         color:@green;
@@ -1842,6 +1924,8 @@ h3.red-title.corner{
                             align-items:center;
                             .btn-more{
                                 .btn;
+                                margin: 4px 0 -3px 8px;
+
                             }
                             .text{
                                 color:@black;
@@ -1850,29 +1934,37 @@ h3.red-title.corner{
                                 font-weight: 700;
                                 text-transform: uppercase;
                                 text-decoration: underline;
+                                margin: 7px 23px 0 11px;
                             }
                         }
 
                     }
                     form{
+                        padding: 40px 0 40px 1px;
                         input{
-                            width: 301px;
-                            height: 51px;
-                            border: 1px solid @black;
-                            border-radius: 4px; 
-                            background:@white;
+                            width: 280px;
+                            height: 49px;
+                            border: 1px solid #202020;
+                            border-radius: 4px;
+                            background: #fff;
+                            margin: 0 0 13px;
+                            font-size: 15px;
+                            padding: 0 0 0 19px;
+
                         }
                         div{
                             position:relative;
                             textarea{
-                                background: #fff none repeat scroll 0 0;
-                                border: 1px solid @black;
+                                background: #fff;
+                                border: 1px solid #202020;
                                 border-radius: 4px;
                                 color: #333;
                                 font-family: Proxima Nova Light;
                                 font-size: 16px;
-                                width: 100%;
-                                height:92px;
+                                width: 85.6%;
+                                height: 92px;
+                                padding: 11px 90px 8px 16px;
+                                resize:none;
                             }
                             button{
                                 -moz-border-bottom-colors: none;
@@ -1892,6 +1984,16 @@ h3.red-title.corner{
                             }
                         }
                     }
+                }
+            }
+            .news-incidents{
+                h3{
+                    max-width:41%;
+                }
+                .all-articles{
+                    width: 100%;
+                    padding: 37px 0 0 2px;
+
                 }
             }
         }
