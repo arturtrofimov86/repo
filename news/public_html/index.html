@@ -7,7 +7,7 @@
         <link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
         <link href="css/fonts.css" rel="stylesheet" type="text/css"/>
         <link href="css/icons.css" rel="stylesheet" type="text/css"/>
-        <link href="css/slider.css" rel="stylesheet" type="text/css"/>
+        <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css"/>
         <link href="css/tabs.css" rel="stylesheet" type="text/css"/>
         <link href="css/reset.css" rel="stylesheet" type="text/css"/>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
@@ -75,94 +75,48 @@
                 <div class="news-main">
                     <div class="slider-news">
                         <h3 class="title-rubrics corner white-title">Главные новости:</h3>
-                        <div id='slider25' class="lwrap">
-                            <input name="cs_anchor25" id="cs_slide25-0" type="radio">
-                            <input name="cs_anchor25" id="cs_slide25-1" type="radio">
-                            <input name="cs_anchor25" id="cs_slide25-2" type="radio">
-                            <input name="cs_anchor25" id="cs_slide25-3" type="radio">
-                            <input name="cs_anchor25" id="cs_slide25-4" type="radio">
-                            <input name="cs_anchor25" id="cs_play25" type="radio" checked="">
-                            <ul>
-                                <li>
-                                    <img src="images/slider1.png" alt=""/>
-                                </li>
-                                <li class="num0">
-                                    <img src="images/slider1.png" alt=""/>
-                                </li>
-                                <li class="num1">
-                                    <img src="images/slider1.png" alt=""/>
-                                </li>
-                                <li class="num2">
-                                    <img src="images/slider1.png" alt=""/>
-                                </li>
-                                <li class="num3">
-                                    <img src="images/slider1.png" alt=""/>
-                                </li>
-                                <li class="num4">
-                                    <img src="images/slider1.png" alt=""/>
-                                </li>
-                            </ul>
-                            <div class="prev">
-                                <label class="num0" for='cs_slide25-0'></label>
-                                <label class="num1" for='cs_slide25-1'></label>
-                                <label class="num2" for='cs_slide25-2'></label>
-                                <label class="num1" for='cs_slide25-3'></label>
-                                <label class="num2" for='cs_slide25-4'></label>
-                            </div>
-                            <div class="next">
-                                <label class="num0" for='cs_slide25-0'></label>
-                                <label class="num1" for='cs_slide25-1'></label>
-                                <label class="num2" for='cs_slide25-2'></label>
-                                <label class="num1" for='cs_slide25-3'></label>
-                                <label class="num2" for='cs_slide25-4'></label>
-                            </div>
-                            <div class="bullets" data-flex='center'>
-                                <label class="num0" for='cs_slide25-0'>
-
-                                </label>
-                                <label class="num1" for='cs_slide25-1'>
-
-                                </label>
-                                <label class="num2" for='cs_slide25-2'>
-
-                                </label>
-                                <label class="num3" for='cs_slide25-3'>
-
-                                </label>
-                                <label class="num4" for='cs_slide25-4'>
-
-                                </label>
-                            </div>
-                            <div class="description" data-childs="col -center center">
-                                <label class="num0">
-
+                        <ul class="bxslider">
+                            <li>
+                                <img src="images/slider1.png" />
+                                <div class="description">
                                     <span class="lbl-date"><time>26/06/17</time><time>10:58</time></span>
                                     <a href="#">В Ингушетии создана спецкомиссия по подсчету 
                                         ущерба от стихийных последствий</a>
-
-                                </label>
-                                <label class="num1">
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/slider1.png" />
+                                <div class="description">
                                     <span class="lbl-date"><time>26/06/17</time><time>10:58</time></span>
                                     <a href="#">В Ингушетии создана спецкомиссия по подсчету 
                                         ущерба от стихийных последствий</a>
-                                </label>
-                                <label class="num2">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="description">
                                     <span class="lbl-date"><time>26/06/17</time><time>10:58</time></span>
                                     <a href="#">В Ингушетии создана спецкомиссия по подсчету 
                                         ущерба от стихийных последствий</a>
-                                </label>
-                                <label class="num3">
+                                </div>
+                                <img src="images/slider1.png" />
+                            </li>
+                            <li>
+                                <div class="description">
                                     <span class="lbl-date"><time>26/06/17</time><time>10:58</time></span>
                                     <a href="#">В Ингушетии создана спецкомиссия по подсчету 
                                         ущерба от стихийных последствий</a>
-                                </label>
-                                <label class="num4">
+                                </div>
+                                <img src="images/slider1.png" />
+                            </li>
+                            <li>
+                                <div class="description">
                                     <span class="lbl-date"><time>26/06/17</time><time>10:58</time></span>
                                     <a href="#">В Ингушетии создана спецкомиссия по подсчету 
                                         ущерба от стихийных последствий</a>
-                                </label>
-                            </div>
-                        </div>
+                                </div>
+                                <img src="images/slider1.png" />
+                            </li>
+                        </ul>
                     </div>
                     <div class="news-list">
                         <h3 class="title-rubrics corner white-title">Коротко о главном:</h3>
@@ -633,9 +587,11 @@
 
         </div>
         <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
-
+        <script src="js/jquery.bxslider.js" type="text/javascript"></script>
         <script>
-
+            $(document).ready(function () {
+                $('.bxslider').bxSlider();
+            });
         </script>
     </body>
 </html>
