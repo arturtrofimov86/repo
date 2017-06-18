@@ -1,0 +1,43 @@
+.icon-telegram, .icon-locator, .icon-viber, .icon-whatsapp, .icon-arrow-down, .icon-locator-alt, .icon-arrow-right, .icon-warning-alt{
+    display: inline-block;
+}
+.icon-warning-alt{
+    width:30px;
+    height:30px;
+    background:url(../images/icon-warning-alt.png);
+}
+.icon-arrow-right{
+    width:21px;
+    height:16px;
+    background:url(../images/icon-arrow-right.png);
+}
+.icon-locator-alt{
+    width:13px;
+    height:18px;
+    background:url(../images/icon-locatore2.png);
+}
+.icon-telegram{
+    width:21px;
+    height:21px;
+    background:url(../images/icon-telegramm.png);
+}
+.icon-locator{
+    width:16px;
+    height:20px;
+    background:url(../images/icon-locatore.png);
+}
+.icon-viber{
+    width:18px;
+    height:18px;
+    background:url(../images/icon-viber.png);
+}
+.icon-arrow-down{
+    width:16px;
+    height:21px;
+    background:url(../images/icon-arrow-down.png);
+}
+.icon-whatsapp{
+    width:16px;
+    height:16px;
+    background:url(../images/icon-ws.png);
+}
