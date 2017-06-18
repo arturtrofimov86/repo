@@ -235,14 +235,18 @@ header{
 
                     }
                     .header-today-news{
+                        flex-direction:column;
                         .weather-place{
                             .weahter-town{
+                                width:100%;
                                 position:static;
                             }
 
                         }
                         .cash{
-                            padding-top:0;
+                            padding-top:10px;
+                            padding-left:0;
+                            width:100%;
                         }
                     }
                 }
@@ -795,8 +799,8 @@ h3.red-title.corner{
                     width:60%;
                 }
                 @media(max-width:991px){
-                width:100%;
-            }
+                    width:100%;
+                }
                 .gallery-news{
                     width: 66.2%;
                     display: flex;
@@ -1366,11 +1370,22 @@ h3.red-title.corner{
 }
 .page-template-about{
     .content{
+
+        .map{
+            img{
+                width:100%;
+                height:100%;
+                display: block;
+            }
+        }
         .contact-information{
             border-top:10px solid @green;
             max-width:1200px;
             margin:0 auto;
             padding:36px 0 57px 0;
+            @media(max-width:1200px){
+                padding:30px 10px;
+            }
             .top-info{
                 display:flex;
                 justify-content:space-between;
@@ -1411,7 +1426,7 @@ h3.red-title.corner{
                     padding: 14px 0 0 5px;
                     @media(max-width:1200px){
                         width:50%;
-                        padding:20px 0 0 10px;
+                        padding:20px 0 0 0px;
                     }
                     @media(max-width:640px){
                         width:100%;
@@ -1469,10 +1484,10 @@ h3.red-title.corner{
                     width: 16.8%;
                     padding: 14px 0 0 0;
                     @media(max-width:1200px){
-                        width:30%;
+                        width:100%;
                         padding:20px 0 0 0;
                     }
-                    @media(max-width:640px){
+                    @media(max-width:768px){
                         width:100%;
                     }
                     .list-social {
@@ -1494,6 +1509,10 @@ h3.red-title.corner{
                 line-height: 21px;
                 color:@black;
                 padding: 0 0 20px 11px;
+                @media(max-width:768px){
+                    text-align:justify;
+                    padding-left:0!important;
+                }
 
             }
             p::first-line{
@@ -1504,6 +1523,9 @@ h3.red-title.corner{
                 flex-wrap:wrap;
                 justify-content:space-between;
                 padding: 44px 14px 0 10px;
+                @media(max-width:992px){
+                    padding:30px 0 0;
+                }
                 h3{
                     color:@black;
                     font-family: Alice;
@@ -1538,6 +1560,8 @@ h3.red-title.corner{
                         background:@white;
                         font-family: Proxima Nova Light;
                         font-size: 16px;
+
+
                         &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
                             color:#333;
                         }
@@ -1557,6 +1581,9 @@ h3.red-title.corner{
                         height: 48px;
                         margin: 0 0 12px;
                         padding: 0 15px 0 19px;
+                        @media(max-width:992px){
+                            max-width:320px;
+                        }
                     }
                     textarea{
                         height: 92px;
