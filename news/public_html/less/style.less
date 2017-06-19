@@ -25,61 +25,20 @@ header{
     .header{
         margin:0 auto;
         padding:0 10px;
-        max-width:1180px;
+        max-width:1200px;
 
-        .header-top{
-            width:100%;
-            display: inline-flex;
-            display:-webkit-inline-flex;
-            justify-content: space-between;
-            align-items: center;
-            -webkit-justify-content:space-between;
-            -webkit-align-items:center;
-            padding: 39px 0 0 1px;
-            .left-side{
-                display: inline-flex;
-                display:-webkit-flex;
-                width:27%;
-                padding: 2px 0 0 0px;
-                .title{
-                    color:@white;
-                    font-family: 'Proxima Nova Light';
-                    font-size: 14px;
-                    padding-left:25px;
-                    padding-top:4px;
-                    line-height:17px;
-                }
-            }
-            form{
-                border: 1px solid @white;
-                border-radius: 4px;
-                width:299px;
-                padding: 12px 0 9px 9px;
-                margin: 1px 1px 0 0;
-                input[type="search"]{
-                    border: none;
-                    background: 0 0;
-                    color: #fff;
-                    height: 20px;
-                    border-left: 2px solid @white;
-                    margin: 0 0 0 4px;
-                    width: 255px;
-                }
-            }
-        }
         .header-main{
             display:inline-flex;
             display:-webkit-inline-flex;
-            padding:26px 0 104px 0;
+            padding:30px 0 103px 0;
             width:100%;
             justify-content:space-between;
             -webkit-justify-content:space-between;
             .header-main-info{
                 .logo{
                     display: block;
-                    margin: 11px 0 63px 0px;
-                    max-width: 351px;
-                    max-height: 92px;
+                    margin: 11px 0 57px 16px;
+
                     img{
                         width:100%;
                         height:100%;
@@ -91,7 +50,7 @@ header{
                     font-family:'Proxima Nova Light';
                     font-size:16px;
                     color:@white;
-                    padding: 0 0 0 1px;
+                    padding: 0 0 0 18px;
                     span{
                         font-family:'Proxima Nova Regular';
                         padding: 0 8px 0 4px;
@@ -102,170 +61,112 @@ header{
                 }
             }
             .right-side{
-                .navigation-header{
-                    justify-content:space-between;
-                    display:flex;
-                    -webkit-justify-content:space-between;
-                    display:-webkit-flex;
-                    margin:0 0 18px 0;
-                    a{
-                        font-family:'Proxima Nova Semibold';
-                        font-size: 20px;
-                        color:@white;
-                        text-transform: uppercase;
-                        padding: 13px 12px 12px;
-                        margin:0 2px;
-                        &:after{
-                            position:absolute;
-                            left:0;
-                            bottom:-10px;
-                            border-left: 0px solid transparent;
-                            border-right: 10px solid transparent;
-                            border-top: 10px solid transparent;
-                        }
-                        &:hover{
-                            background:@white;
-                            color: #179028;
-                            &:after{
-                                border-top: 10px solid @white;
-                            }
-                        }
-                        @media(max-width:1024px){
-                            font-size:16px;
-                        }
-                    }
-                }
-                .header-today-news{
-                    display:-webkit-flex;
-                    display:flex;
-                    justify-content:space-between;
-                    -webkit-justify-content:space-between;
-
-                    dl{
-                        width: 30.9%;
-                        font-size: 18px;
-                        line-height: 30px;
+                display:flex;
+                align-items:flex-end;
+                flex-direction:column;
+                form{
+                    border: 1px solid @white;
+                    border-radius: 4px;
+                    width: 299px;
+                    padding: 12px 0 9px 9px;
+                    margin: 10px 3px 26px 0;
+                    input[type="search"]{
+                        border: none;
+                        background: 0 0;
                         color: #fff;
-                        padding-top: 32px;
-                        padding-left: 6px;
-                        dd{
-                            font-family:'Proxima Nova Regular';
-                        }
-                        dt{
-                            font-family:'Proxima Nova Thin';
-                        }
-                    }
-                    .weather-place{
-                        width:69%;
-                        position:relative;
-                        .weahter-town{
-                            font-family: 'Proxima Nova Light';
-                            font-size: 16px;
-                            color:@white;
-                            position:absolute;
-                            i{
-                                margin: 5px 5px -4px 3px;
-                            }
-                            &:nth-of-type(1){
-                                left:5.4%;
-                            }
-                            &:nth-of-type(2){
-                                left: 11%;
-                                top: 46%;
-                            }
-                            &:nth-of-type(3){
-                                top: 76%;
-                                left: 16.9%;
-                            }
-                            &:nth-of-type(4){
-                                left:39%;
-                                top: 36%;
-                            }
-                            &:nth-of-type(5){
-                                left: 67.4%;
-                                top: 23.1%;
-                            }
-
-                        }
+                        height: 20px;
+                        border-left: 2px solid @white;
+                        margin: 0 0 0 4px;
+                        width: 255px;
                     }
                 }
             }
-        }
-    }
-}
-@media(max-width:1200px){
-    header{
-        .header{
-            .header-main{
-                flex-direction:column;
-                align-items:center;
-                -webkit-flex-direction:column;
-                -webkit-align-items:center;
-                .header-main-info{
-                    .logo{
-                        margin:10px 0 10px;
+            .navigation-header{
+                justify-content:space-between;
+                display:flex;
+                -webkit-justify-content:space-between;
+                display:-webkit-flex;
+                margin:0 0 18px 0;
+                a{
+                    font-family:'Proxima Nova Semibold';
+                    font-size: 20px;
+                    color:@white;
+                    text-transform: uppercase;
+                    padding: 13px 12px 12px;
+                    margin:0 2px;
+                    &:after{
+                        position:absolute;
+                        left:0;
+                        bottom:-10px;
+                        border-left: 0px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-top: 10px solid transparent;
                     }
-                }
-                .right-side{
-                    width:100%;
-                    padding-top:20px;
-                    .header-today-news{
-
+                    &:hover{
+                        background:@white;
+                        color: #179028;
+                        &:after{
+                            border-top: 10px solid @white;
+                        }
+                    }
+                    @media(max-width:1024px){
+                        font-size:16px;
                     }
                 }
             }
-        }
-    }
-}
-@media(max-width:768px){
-    header{
-        .header{
-            .header-main{
+            .header-today-news{
+                display:-webkit-flex;
+                display:flex;
+                justify-content:space-between;
+                -webkit-justify-content:space-between;
+                width:100%;
 
-                .header-main-info{
-                    .logo{
-
+                dl{
+                    width: 30.9%;
+                    font-size: 18px;
+                    line-height: 30px;
+                    color:@white;
+                    padding-top: 33px;
+                    padding-left: 1px;
+                    dd{
+                        font-family:'Proxima Nova Regular';
+                    }
+                    dt{
+                        font-family:'Proxima Nova Thin';
                     }
                 }
-                .right-side{
-                    .navigation-header{
-                        flex-direction: column;
-                        text-align: center;
-                        -webkit-flex-direction: column;
-
-                    }
-                    .header-today-news{
-                        flex-direction:column;
-                        .weather-place{
-                            .weahter-town{
-                                width:100%;
-                                position:static;
-                            }
-
+                .weather-place{
+                    width:69%;
+                    position:relative;
+                    .weahter-town{
+                        font-family: 'Proxima Nova Light';
+                        font-size: 16px;
+                        color:@white;
+                        position:absolute;
+                        i{
+                            margin: 5px 5px -4px 3px;
                         }
-                        .cash{
-                            padding-top:10px;
-                            padding-left:0;
-                            width:100%;
+                        &:nth-of-type(1){
+                            left: 5.1%;
+                            top: 0px;
                         }
-                    }
-                }
-            }
-        }
-    }
-}
-@media(max-width:640px){
-    header{
-        .header{
-            .header-top{
-                -webkit-flex-direction: column;
-                flex-direction:column;
-                .left-side{
-                    width:100%;
-                    flex-direction: column;
-                    align-items:center;
-                    .title{
-                        padding:10px 0 10px 0;
+                        &:nth-of-type(2){
+                            left: 10.2%;
+                            top: 46%;
+                        }
+                        &:nth-of-type(3){
+                            top: 77%;
+                            left: 16.5%;
+                        }
+                        &:nth-of-type(4){
+                            left: 38%;
+                            top: 37%;;
+                        }
+                        &:nth-of-type(5){
+                            left: 66.6%;
+                            top: 23.1%;
+                        }
+
                     }
                 }
             }
@@ -750,9 +651,8 @@ h3.red-title.corner{
             }
             .news-list{
                 position: relative;
-                width:38.1%;
+                width:39.4%;
                 background-image: linear-gradient(to left, #232629 0%, #34393d 100%);
-                padding:44px 0 0 25px;
                 @media(max-width:1600px){
                     width:40%;
                 }
@@ -760,13 +660,15 @@ h3.red-title.corner{
                     width:100%;
                 }
                 .title-rubrics{
-                    position:absolute;
-                    left: 0;
-                    top: -45px;
-                    width: 50.4%;
+                    position: absolute;
+                    top: -44px;
+                    left: -1px;
+                    padding: 0 22px 0 22px;
+                    width: 48%;
                 }
                 ul{
-                    max-width:65%;
+                    max-width: 65%;
+                    padding: 45px 0 0 24px;
                     @media(max-width:1600px){
                         max-width:100%;
                     }
@@ -785,7 +687,7 @@ h3.red-title.corner{
                 }
             }
             .slider-news{
-                width:60.5%;
+                width:61.5%;
                 background-image: linear-gradient(to left, #232629 0%, #34393d 100%);
                 position:relative;
                 @media(max-width:1600px){
@@ -843,16 +745,16 @@ h3.red-title.corner{
                     justify-content: space-between;
                     flex-wrap: wrap;
                     padding-right: 33px;
-                    padding-top: 35px;
-                    padding-bottom: 8px;
+                    padding-top: 34px;
+                    padding-bottom: 5px;
                     @media(max-width:1600px){
                         width:100%;
                         padding: 24px 10px 0;
 
                     }
                     .article-news{
-                        width: 32.3%;
-                        margin: 0 0 29px;
+                        width: 32.5%;
+                        margin: 0 0 28px;
                         @media(max-width:1600px){
                             width:32%;
                         }
@@ -863,6 +765,7 @@ h3.red-title.corner{
                             width:32%;
                         }
                         .news-title{
+                            padding: 11px 0 0 10px;
                             a{
                                 color:@white;
                                 &:hover{
@@ -874,7 +777,7 @@ h3.red-title.corner{
                 }
             }
             .news-list{
-                width:40.2%;
+                width:39.4%;
                 background-color: #d3dbe2;
                 @media(max-width:1600px){
                     width: 41.7%;
@@ -886,6 +789,7 @@ h3.red-title.corner{
                     background:@red;
                     color:@white;
                     max-width: 50.4%;
+                    padding: 0 0 0 24px;
                 }
                 ul{
                     padding: 41px 0 0 23px;
