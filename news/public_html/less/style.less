@@ -34,10 +34,23 @@ header{
             width:100%;
             justify-content:space-between;
             -webkit-justify-content:space-between;
+            @media(max-width:1200px){
+                flex-direction:column;
+            }
             .header-main-info{
+                @media(max-width:1200px){
+                    flex-direction:column;
+                    display:flex;
+                    align-items:center;
+                }
                 .logo{
                     display: block;
                     margin: 11px 0 57px 16px;
+                    @media(max-width:1200px){
+                        max-width:360px;
+                        max-height:176px;
+                        margin: 0px 0 15px 0px;
+                    }
 
                     img{
                         width:100%;
@@ -51,6 +64,9 @@ header{
                     font-size:16px;
                     color:@white;
                     padding: 0 0 0 18px;
+                    @media(max-width:1200px){
+                        padding:0 0 0 0;
+                    }
                     span{
                         font-family:'Proxima Nova Regular';
                         padding: 0 8px 0 4px;
@@ -64,6 +80,10 @@ header{
                 display:flex;
                 align-items:flex-end;
                 flex-direction:column;
+                @media(max-width:1200px){
+                    align-items:center;
+                }
+
                 form{
                     border: 1px solid @white;
                     border-radius: 4px;
@@ -87,6 +107,10 @@ header{
                 -webkit-justify-content:space-between;
                 display:-webkit-flex;
                 margin:0 0 18px 0;
+                @media(max-width:768px){
+                    flex-direction:column;
+                    width:100%;
+                }
                 a{
                     font-family:'Proxima Nova Semibold';
                     font-size: 20px;
@@ -94,6 +118,9 @@ header{
                     text-transform: uppercase;
                     padding: 13px 12px 12px;
                     margin:0 2px;
+                    @media(max-width:768px){
+                        text-align:center;
+                    }
                     &:after{
                         position:absolute;
                         left:0;
@@ -120,6 +147,9 @@ header{
                 justify-content:space-between;
                 -webkit-justify-content:space-between;
                 width:100%;
+                @media(max-width:768px){
+
+                }
 
                 dl{
                     width: 30.9%;
@@ -128,6 +158,10 @@ header{
                     color:@white;
                     padding-top: 33px;
                     padding-left: 1px;
+                    @media(max-width:768px){
+                        width:49%;
+                        text-align:right;
+                    }
                     dd{
                         font-family:'Proxima Nova Regular';
                     }
@@ -138,11 +172,17 @@ header{
                 .weather-place{
                     width:69%;
                     position:relative;
+                    @media(max-width:768px){
+                        width:49%;
+                    }
                     .weahter-town{
                         font-family: 'Proxima Nova Light';
                         font-size: 16px;
                         color:@white;
                         position:absolute;
+                        @media(max-width:768px){
+                            position:static;
+                        }
                         i{
                             margin: 5px 5px -4px 3px;
                         }
@@ -819,7 +859,7 @@ h3.red-title.corner{
             margin:0 auto;
             .warning-info{
                 display:flex;
-                padding:29px 0 29px;
+                padding: 28px 7px 30px 7px;
                 .lbl-warning{
                     width:25px;
                     height:25px;
@@ -856,8 +896,8 @@ h3.red-title.corner{
             .gallery-news{
                 display: flex;
                 justify-content: space-between;
-                flex-wrap:wrap;
-                padding: 0 10px 84px 11px;
+                flex-wrap: wrap;
+                padding: 0 3px 84px 18px;
 
 
                 .article-news{
@@ -1824,16 +1864,27 @@ h3.red-title.corner{
             display:flex;
             padding: 34px 0 0 0;
             align-items:start;
+            justify-content:space-between;
+            @media(max-width:991px){
+                flex-direction:column;
+            }
             .sidebar{
-                width: 21.8%;
+                width: 25%;
                 background: #d3dbe2;
-                padding: 49px 0 34px 40px;
+                flex-shrink: 0;
+                @media(max-width:992px){
+                    width:100%;
+                }
                 h4{
-                    color: #202020;
+                    color:@black;
                     font-family: Proxima Nova Bold;
                     font-size: 24px;
+                    text-align: center;
                     text-transform: uppercase;
-                    padding: 0 0 36px 17px;
+                    padding: 49px 0 36px 13px;
+                    @media(max-width:992px){
+                        padding: 19px 0 15px 0px;
+                    }
                 }
                 .lbl-wrap{
                     display:flex;
@@ -1842,11 +1893,14 @@ h3.red-title.corner{
                         font-size: 16px;
                         color: #fefefe;
                         height: 44px;
-                        width: 262px;
-                        padding: 0 58px 0 18px;
+                        padding: 0 62px 0 17px;
+                        @media(max-width:1100px){
+                            padding:0 30px 0 17px;
+                        }
                         time{
                             &:nth-last-of-type(2){
                                 font-family: Proxima Nova Bold;
+                                padding:0 3px 0 0;
                             }
                             &:nth-last-of-type(1){
                                 font-family: Proxima Nova Regular;
@@ -1878,19 +1932,33 @@ h3.red-title.corner{
                     color:@black;
                     font-size: 14px;
                     font-family: Proxima Nova Light;
-                    padding: 28px 0 0 18px;
+                    padding: 27px 0 0 57px;
                     line-height: 27px;
+                    @media(max-width:992px){
+                        padding:0 0 0 10px;
+                    }
                     dt{
                         font-family:Proxima Nova Bold;
                     }
                 }
                 .tags{
-                    padding: 12px 0 0 18px;
+                    padding: 12px 0 35px 57px;
+                    @media(max-width:992px){
+                        padding:0 0 20px 10px;
+                    }
                 }
 
             }
             #slider-div{
-                width:78.2%;
+                width:75%;
+                img{
+                    width:100%;
+                    height:100%;
+                    display:block;
+                }
+                @media(max-width:992px){
+                    width:100%;
+                }
                 .description{
                     position:absolute;
                     left:23px;
@@ -1901,6 +1969,10 @@ h3.red-title.corner{
                         font-size: 30px;
                         font-weight: 400;
                         line-height:36px;
+                        @media(max-width:992px){
+                            font-size: 20px;
+                            line-height: 20px;
+                        }
                     }
                 }
                 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
@@ -1934,28 +2006,59 @@ h3.red-title.corner{
                 background:#fff;
                 @media(max-width:1100px){
                     width:100%;
-                    padding:40px 0 0;
+                    padding:45px 0 0;
+                    display:flex;
+                    justify-content:space-between;
                 }
-
-                .news-list{
-                    padding: 30px 0 0 15px;
-                    li{
-                        margin:0 0 20px 0;
-                        a{
-                            color: #666;
-                            font-family: Proxima Nova Regular;
-                            font-size: 14px;
-                            &:Hover{
-                                text-decoration: underline;
+                @media(max-width:480px){
+                    flex-direction:column;
+                }
+                > div:nth-of-type(1){
+                    @media(max-width:1100px){
+                        width:73%;
+                    }
+                    @media(max-width:480px){
+                        width:100%;
+                    }
+                    .news-list{
+                        padding: 30px 0 0 15px;
+                        @media(max-width:1100px){
+                            padding:30px 0 0 0;
+                        }
+                        li{
+                            margin:0 0 20px 0;
+                            a{
+                                color: #666;
+                                font-family: Proxima Nova Regular;
+                                font-size: 14px;
+                                &:Hover{
+                                    text-decoration: underline;
+                                }
                             }
                         }
                     }
                 }
                 .banner-place {
+                    @media(max-width:1100px){
+                        width:27%;
+                    }
+                    @media(max-width:480px){
+                        width:100%;
+                    }
                     a{
                         display: block;
-
                         margin: 71px 0 0 21px;
+                        @media(max-width:1100px){
+                            margin: 0px 0 0 0px;
+                            text-align:right;
+                            img{
+                                @media(max-width:1100px){
+                                    width:100%;
+                                    height:100%;
+                                    display:block;
+                                }
+                            }
+                        }
 
                     }
                 }
@@ -1974,6 +2077,12 @@ h3.red-title.corner{
                     font-family: Proxima Nova Light;
                     padding: 0 0 24px 21px;
                     line-height: 24px;
+                    @media(max-width:1100px){
+                        padding:0 0 24px 0;
+                    }
+                    @media(max-width:768px){
+                        text-align:justify;
+                    }
                     .text-link{
                         color: #179028;
                         text-decoration: underline;
@@ -1981,8 +2090,16 @@ h3.red-title.corner{
                 }
                 .photo-article{
                     padding: 0 0 25px 20px;
+                    @media(max-width:1100px){
+                        padding:0 0 20px;
+                    }
                     figure{
                         max-width:582px;
+                        img{
+                            width:100%;
+                            height:100%;
+                            display:block;
+                        }
                     }
                     .photo-title{
                         color:@black;
@@ -1997,10 +2114,14 @@ h3.red-title.corner{
                 }
                 .comment-block{
                     padding: 0 0 0 19px;
+                    @media(max-width:1100px){
+                        padding:0 0 0px 0;
+                    }
 
                     .comment-block-heading{
                         display: flex;
                         justify-content: space-between;
+
                         .visited-quantity{
                             font-size:16px;
                             font-family: Proxima Nova Light;
@@ -2015,6 +2136,9 @@ h3.red-title.corner{
                         .social-wrap{
                             display:flex;
                             padding: 9px 0 23px 2px;
+                            @media(max-width:640px){
+                                flex-direction:column;
+                            }
                             .follow{
                                 color:@black;
                                 font-family: Proxima Nova Bold;
@@ -2048,6 +2172,9 @@ h3.red-title.corner{
                     .comment-heading{
                         display: flex;
                         padding: 0 0 33px 0;
+                        @media(max-width:1100px){
+                            padding:0 0 30px 20px;
+                        }
                         h3{
                             margin: 0 23px 0 -18px;
                             padding: 1px 21px 0 25px;
@@ -2184,13 +2311,32 @@ h3.red-title.corner{
             }
             .news-incidents{
                 h3{
-                    max-width:41%;
+                    max-width:388px;
+                    @media(max-width:480px){
+                        max-width:310px;
+                    }
                 }
                 .all-articles{
                     width: 100%;
                     padding: 37px 0 0 2px;
                     .article-news{
                         align-items:flex-start;
+                        @media(max-width:360px){
+                            flex-direction:column;
+                        }
+                        figure{
+                            width: 25.6%;
+                            @media(max-width:1100px){
+                                margin:0 10px 0 0;
+                            }
+                            @media(max-width:480px){
+                                width:40%;
+                            }
+                            @media(max-width:360px){
+                                width:100%;
+                            }
+
+                        }
                         .article-info{
                             .lbl-date{
                                 width:52px;
