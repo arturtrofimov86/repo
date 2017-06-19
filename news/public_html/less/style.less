@@ -1706,11 +1706,23 @@ h3.red-title.corner{
     .content{
         max-width:1200px;
         margin:0 auto;
+        @media(max-width:1280px){
+            padding:0 10px;
+        }
         .rubric-gallery{
             .breadcrumbs{
                 background:@green;
-                margin: 34px 0 0 0;
+                margin: 35px 0 0;
                 padding: 13px 0 10px 19px;
+                &:after{
+                    position:absolute;
+                    left:0;
+                    bottom:-10px;
+                    border-left:0px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-top: 10px solid @green;
+                    z-index: 1000;
+                }
                 ul{
                     li{
                         color:@white;
@@ -1719,6 +1731,9 @@ h3.red-title.corner{
                         font-weight: 400;
                         text-transform: uppercase;
                         display:inline-block;
+                        @media(max-width:768px){
+                            font-size:20px;
+                        }
                         a{
                             color:@white;
                             i{
@@ -1736,21 +1751,38 @@ h3.red-title.corner{
                         bottom:31px;
                         display: flex;
                         left: 0;
+                        @media(max-width:768px){
+                            flex-direction:column;
+                            bottom:5px;
+                        }
                         i{
                             margin: 0 35px 0 36px;
+                            flex-shrink: 0;
+                            @media(max-width:768px){
+                                margin:0 10px 10px 10px;
+                            }
                         }
                         h4{
                             color: #fefefe;
                             font-family: Alice;
                             font-size: 30px;
                             font-weight: 400;
-                            line-height: 34px;
-                            padding:9px 0 0 10px;
+                            line-height: 35px;
+                            padding: 9px 0 0 10px;
+                            @media(max-width:992px){
+                                font-size:24px;
+                                line-height:28px;
+                            }
+                            @media(max-width:768px){
+                                font-size:18px;
+                            }
+
                         }
                         .lbl-date{
                             position:static;
                             max-width:105px;
                             font-size:16px;
+                            height:25px;
                         }
                     }
                 }
@@ -1759,13 +1791,33 @@ h3.red-title.corner{
                 display: flex;
                 padding:11px 0 0 0;
                 justify-content:space-between;
-                @media(max-width:992px){
+                @media(max-width:768px){
                     flex-direction:column;
                 }
                 > div:nth-of-type(1){
                     width: 66.9%;
                     @media(max-width:992px){
+                        width:49%;
+                    }
+                    @media(max-width:768px){
                         width:100%;
+                        margin: 0 0 12px;
+                    }
+                    .description-news{
+                        padding: 5px 0 0 22px;
+                        bottom: 21px;
+                        @media(max-width:768px){
+                            bottom:5px;
+                        }
+                        h4{
+                            @media(max-width:992px){
+                                font-size:18px;
+                                line-height:28px;
+                            }
+                            @media(max-width:768px){
+                                line-height:24px;
+                            }
+                        }
                     }
 
                 }
@@ -1773,12 +1825,28 @@ h3.red-title.corner{
                     width: 32.3%;
                     flex-shrink: 0;
                     @media(max-width:992px){
-                        width:100%;
-                        display:flex;
-                        justify-content:space-between;
+                        width:49%;
                     }
+                    @media(max-width:768px){
+                        width:100%;
+                    }
+
                     .article-news{
-                        margin:0 0 16px 0
+                        margin: 0 0 12px;
+                        .description-news{
+                            bottom: 10px;
+                            padding: 0 0 0 7px;
+                            .lbl-date{
+                                max-width: 90px;
+                                font-size: 14px;
+
+                            }
+                            h4{
+                                font-size: 18px;
+                                line-height: 24px;
+                                padding: 7px 0 0 8px;
+                            }
+                        }
 
 
                     }
@@ -1790,13 +1858,13 @@ h3.red-title.corner{
             display: flex;
             justify-content: space-between;
             flex-wrap:wrap;
-            padding: 0 10px 54px 11px;
-
-
-
+            padding: 33px 0px 67px 0px;
+            @media(max-width:768px){
+                padding-top:0;
+            }
             .article-news{
-                width: 19.4%;
-                margin: 0 0 32px 0;
+                width: 19.49%;
+                margin: 0 0 34px;
                 @media(max-width:992px){
                     width:24%;
                 }
@@ -1805,6 +1873,7 @@ h3.red-title.corner{
                 }
                 @media(max-width:480px){
                     width:100%;
+                    margin: 0 0 12px;
                 }
                 .news-title{
                     a{
@@ -1824,6 +1893,9 @@ h3.red-title.corner{
                     font-size: 20px;
                     font-weight: 700;
                     padding: 11px 0 0 9px;
+                    @media(max-width:768px){
+                        padding:11px 0 0 0;
+                    }
                     .text{
                         text-transform: uppercase;
                         text-decoration: underline;
