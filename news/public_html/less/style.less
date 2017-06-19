@@ -531,7 +531,7 @@ footer{
 }
 h3.title-rubrics{
     font-family: Alice;
-    font-size: 1.2vw;
+   
     letter-spacing: 0.7px;
     font-weight: 400;
     text-transform: uppercase;
@@ -540,7 +540,12 @@ h3.title-rubrics{
     color:@green;
     padding:1px 0 0 21px;
     position:relative;
-
+    @media(min-width:991px){
+         font-size: 1.2vw;
+    }
+    @media(max-width:991px){
+        font-size:20px;
+    }
 }
 h3.title-rubrics.green-title{
     background:@green;
@@ -556,7 +561,7 @@ h3.green-title.corner{
         border-right: 10px solid transparent;
         border-top: 10px solid @green;
         left: 0;
-        position: absolute;  
+        position: absolute;
     }
 }
 h3.white-title.corner{
@@ -566,7 +571,7 @@ h3.white-title.corner{
         border-top: 10px solid @white;
         left: 0;
         bottom:-10px;
-        position: absolute;  
+        position: absolute;
         z-index: 10000000;
     }
 }
@@ -577,8 +582,8 @@ h3.red-title.corner{
         border-top: 10px solid #da3131;
         left: 0;
         bottom:-10px;
-        position: absolute;  
-        z-index: 10000000;   
+        position: absolute;
+        z-index: 10000000;
     }
 }
 .btn{
@@ -597,7 +602,7 @@ h3.red-title.corner{
 
 }
 .btn-more.btn-less{
-    background:#999999;    
+    background:#999999;
 }
 .list-social {
     padding:3px 0 0 1px;
@@ -650,6 +655,9 @@ h3.red-title.corner{
         font-weight: 400;
         padding: 9px 0 0 10px;
         line-height:17px;
+        @media(max-width:768px){
+            padding:10px 0 0 ;
+        }
     }
 }
 .all-articles{
@@ -762,7 +770,7 @@ h3.red-title.corner{
                     position:absolute;
                     top: -44px;
                     left: 30.7%;
-                    padding: 0 24px 0 19px;    
+                    padding: 0 24px 0 19px;
                 }
                 .description{
                     position: absolute;
@@ -1213,6 +1221,9 @@ h3.red-title.corner{
             margin:0 auto;
             .search-bar{
                 padding: 44px 0 47px 19px;
+                @media(max-width:768px){
+                    padding-left:0;
+                }
                 h4{
                     font-family: Alice;
                     font-weight: 400;
@@ -1222,7 +1233,7 @@ h3.red-title.corner{
                     padding: 0 0 42px 0;
                     span{
                         font-family: Proxima Nova Bold;
-                        font-weight: 700; 
+                        font-weight: 700;
                         text-transform: none;
                         padding: 0 0 0 5px;
                     }
@@ -1279,6 +1290,9 @@ h3.red-title.corner{
                         @media(max-width:1200px){
                             padding-left:0;
                         }
+                        @media(max-width:768px){
+                            font-size:16px;
+                        }
                         .date{
                             font-family: Proxima Nova Bold;
                             text-decoration: underline;
@@ -1298,11 +1312,15 @@ h3.red-title.corner{
             .searched{
                 font-family: Alice;
                 font-weight: 400;
-                text-transform: uppercase;  
+                text-transform: uppercase;
                 color: @black;
                 font-size: 24px;
                 text-transform: uppercase;
                 padding: 0 0 43px 19px;
+                @media(max-width:768px){
+                    font-size:21px;
+                    padding:0 0 20px;
+                }
                 .quantity{
                     font-family: Proxima Nova Bold;
                     padding: 0 6px 0 5px;
@@ -1318,7 +1336,9 @@ h3.red-title.corner{
                 justify-content: space-between;
                 flex-wrap:wrap;
                 padding: 0 10px 54px 11px;
-
+                @media(max-width:768px){
+                    padding:0 0 20px;
+                }
 
 
                 .article-news{
@@ -1334,6 +1354,9 @@ h3.red-title.corner{
                         width:100%;
                     }
                     .news-title{
+                        @media(max-width:768px){
+                            padding-left:0;
+                        }
                         a{
                             color: @black;
                             font-size: 14px;
@@ -1351,6 +1374,9 @@ h3.red-title.corner{
                         font-size: 20px;
                         font-weight: 700;
                         padding: 11px 0 0 9px;
+                        @media(max-width:768px){
+                            padding:11px 0 0 0;
+                        }
                         .text{
                             text-transform: uppercase;
                             text-decoration: underline;
@@ -1401,7 +1427,7 @@ h3.red-title.corner{
                     font-family: Alice;
                     font-size: 70px;
                     text-transform: uppercase;
-                    padding: 12px 0 0 11px; 
+                    padding: 12px 0 0 11px;
                     @media(max-width:1200px){
                         width:100%;
                         text-align:center;
@@ -1531,7 +1557,7 @@ h3.red-title.corner{
                     font-family: Alice;
                     font-size: 24px;
                     font-weight: 400;
-                    text-transform: uppercase; 
+                    text-transform: uppercase;
                     width:100%;
                     padding:0 0 43px 10px;
                 }
@@ -1648,7 +1674,7 @@ h3.red-title.corner{
                             color: #fefefe;
                             font-family: Alice;
                             font-size: 30px;
-                            font-weight: 400; 
+                            font-weight: 400;
                             line-height: 34px;
                             padding:9px 0 0 10px;
                         }
@@ -1741,7 +1767,7 @@ h3.red-title.corner{
                     }
                 }
             }
-        }  
+        }
     }
 }
 .page-template-article{
@@ -1775,7 +1801,7 @@ h3.red-title.corner{
                         padding: 0 58px 0 18px;
                         time{
                             &:nth-last-of-type(2){
-                                font-family: Proxima Nova Bold; 
+                                font-family: Proxima Nova Bold;
                             }
                             &:nth-last-of-type(1){
                                 font-family: Proxima Nova Regular;
@@ -1818,16 +1844,53 @@ h3.red-title.corner{
                 }
 
             }
+            #slider-div{
+                width:78.2%;
+                .description{
+                    position:absolute;
+                    left:23px;
+                    bottom:40px;
+                    a{
+                        color: #fefefe;
+                        font-family: Alice;
+                        font-size: 30px;
+                        font-weight: 400;
+                        line-height:36px;
+                    }
+                }
+                .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+                    bottom: -45px;
+                    left: -0px;
+                    background-color: #202020;
+                    padding-bottom: 16px;
+                    padding-top: 11px;
+                }
+                .bx-wrapper .bx-controls-direction a{
+                    bottom:-48px!important;
+                }
+                .bx-wrapper .bx-next{
+                    right:0;
+                }
+                .bx-wrapper .bx-prev{
+                    left:21px;
+                }
+            }
 
         }
         .article-content{
             display:flex;
             justify-content:space-between;
             padding:0px 0 0 0;
-
+            @media(max-width:1100px){
+                flex-direction:column;
+            }
             .sidebar{
                 width:25%;
                 background:#fff;
+                  @media(max-width:1100px){
+                    width:100%;
+                    padding:40px 0 0;
+                }
 
                 .news-list{
                     padding: 30px 0 0 15px;
@@ -1854,9 +1917,13 @@ h3.red-title.corner{
 
             }
             .article-main{
-                width:75%;
-                padding: 30px 0 0 0px;
-                p{
+                width: 75%;
+                padding: 76px 0 0;
+                @media(max-width:1100px){
+                    width:100%;
+                    padding:40px 0 0;
+                }
+                    p{
                     color:@black;
                     font-size: 16px;
                     font-family: Proxima Nova Light;
@@ -1906,7 +1973,7 @@ h3.red-title.corner{
                             .follow{
                                 color:@black;
                                 font-family: Proxima Nova Bold;
-                                font-size: 18px; 
+                                font-size: 18px;
                             }
                             .list-social{
                                 margin: -7px 0 7px 32px;
@@ -1945,7 +2012,7 @@ h3.red-title.corner{
                             color:@black;
                             font-family: Proxima Nova Bold;
                             font-size: 18px;
-                            text-transform: uppercase; 
+                            text-transform: uppercase;
                             padding: 15px 0 0 2px;
 
                         }
@@ -1963,7 +2030,7 @@ h3.red-title.corner{
                                 color: #666;
                                 font-family: Proxima Nova Regular;
                                 font-size: 14px;
-                                line-height: 30px; 
+                                line-height: 30px;
                                 padding: 0 0 0 11px;
                             }
                         }
