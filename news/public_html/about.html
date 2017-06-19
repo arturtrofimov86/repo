@@ -71,9 +71,7 @@
                 </section>
             </header>
             <section class="content">
-                <div class="map">
-                    <img src="images/map.png" width="1920" height="489"> 
-                </div>
+                <div id="map_div" style="height:489px;"></div>
                 <div class="contact-information">
                     <div class="top-info">
                         <div class="logo">
@@ -88,9 +86,9 @@
                                     <div class="phone viber-whatsapp"><i class="icon-viber"></i><i class="icon-whatsapp"></i>+7 988 825 38 93</div>
                                 </div>
                                 <div class="links">
-                                     <a href="mailto:" class="email"><i class="fa fa-envelope-o" aria-hidden="true"></i>news@homash.ru</a>
+                                    <a href="mailto:" class="email"><i class="fa fa-envelope-o" aria-hidden="true"></i>news@homash.ru</a>
                                     <a href="#" class="email"><i class="icon-telegram"></i>t.me/hoamash24</a>
-                                   
+
                                 </div>
                             </div>
                         </div>
@@ -111,13 +109,15 @@
                     <p>Интернет-СМИ "ХОМАШ" отличает правозащитная направленность, энциклопедичность и представление разных точек зрения. Мы публикуем актуальные данные о современной жизни региона, включая материалы местных СМИ, документы и законодательные акты, справочную информацию об истории, этносах, религиозных и культурных традициях региона, научную литературу, аналитические обзоры и комментарии, сведения о неправительственных организациях, политических и общественных деятелях, региональных средствах массовой информации.</p>
                     <form action="" method="post" name="form-contact">
                         <h3>Есть вопросы? Напишите нам:</h3>
-                        <div>
-                            <input type="text" placeholder="Ваше имя">
-                            <input type="email" placeholder="Ваш email">
-                        </div>
-                        <div>
-                            <textarea placeholder="Ваш комментарий"></textarea>
-                            <button type="submit"></button>
+                        <div class="form-wrap">
+                            <div>
+                                <input type="text" placeholder="Ваше имя">
+                                <input type="email" placeholder="Ваш email">
+                            </div>
+                            <div>
+                                <textarea placeholder="Ваш комментарий"></textarea>
+                                <button type="submit"></button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -132,7 +132,7 @@
                             Информация, размещаемая на ресурсе Хомаш, предназначена для персонального использования. Запрещается копирование и/или воспроизведение информации без активной ссылки на данный ресурс. Администратор сайта Хомаш вправе удалить комментарий без объяснения причин.
                         </p>
                         <div class="about_us">
-                            <span>О нас</span>
+                            <a class="about-link" href="#">О нас</a>
                             <ul class="list-social">
                                 <li class="vk"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                                 <li class="fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -177,7 +177,8 @@
 
         </div>
         <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
-
+        <script src='https://maps.googleapis.com/maps/api/js'></script>
+        <script src="js/index.js" type="text/javascript"></script>
         <script>
 
         </script>
