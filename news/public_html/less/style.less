@@ -291,7 +291,7 @@ footer{
         -webkit-justify-content:space-between;
         -webkit-flex-wrap:wrap;
         @media(max-width:800px){
-            padding:20px 10px 30px 10px;
+            padding:20px 0 0 0px;
         }
         > div{
             &:nth-of-type(1){
@@ -327,9 +327,10 @@ footer{
                 font-weight: 300;
                 line-height: 18px;
                 padding: 0 0 49px 14px;
-                  @media(max-width:800px){
-                   padding:14px 0 24px 0;
-                   font-size:14px;
+                @media(max-width:800px){
+                    padding:14px 0 24px 0;
+                    font-size:14px;
+                    text-align:justify;
                 }
             }
             .about_us{
@@ -358,6 +359,7 @@ footer{
                     }
                 }
                 ul{
+
                     li{
                         display: inline-block;
                         margin: 0 13px 0 0;
@@ -372,6 +374,9 @@ footer{
             .navigation-footer{
                 padding:13px 0 0 0;
                 li{
+                    @media(max-width:800px){
+                        text-align:center;
+                    }
                     margin-bottom:28px;
                     a{
                         color: white;
@@ -402,6 +407,9 @@ footer{
                     width:100%;
                     max-width:320px;
                 }
+                @media(max-width:800px){
+                    max-width:100%;
+                }
 
                 input[type="search"]{
                     background:transparent;
@@ -422,6 +430,9 @@ footer{
                 color: #fffefe;
                 font-size:16px;
                 margin: 0 0 40px 0;
+                @media(max-width:800px){
+                    text-align:center;
+                }
                 .phone{
                     .fa-mobile{
                         font-size:28px;
@@ -1253,10 +1264,13 @@ h3.red-title.corner{
                         font-weight: 700;
                         text-transform: none;
                         padding: 0 0 0 5px;
+                        @media(max-width:600px){
+                            padding:10px 0 0 0;
+                            display:block;
+                        }
                     }
                 }
                 form{
-
                     display: flex;
                     @media(max-width:1200px){
                         flex-direction:column;
@@ -1268,7 +1282,7 @@ h3.red-title.corner{
                         width: 65.7%;
                         display:flex;
                         align-items:flex-start;
-                        @media(max-width:700px){
+                        @media(max-width:1200px){
                             width:100%;
                         }
 
@@ -1282,6 +1296,9 @@ h3.red-title.corner{
                             margin: 10px 0 0;
                             padding: 0 17px 0 17px;
                             flex-grow:1;
+                            @media(max-width:600px){
+                                font-size:16px;
+                            }
                             &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
                                 color: @black;
                             }
@@ -1319,6 +1336,9 @@ h3.red-title.corner{
                             font-family: Proxima Nova Regular;
                             text-decoration: underline;
                             padding:0 0 0 15px;
+                            @media(max-width:480px){
+                                padding:0 0 0 10px;
+                            }
                         }
                         i{
                             margin: 4px 0 -4px 0;
@@ -1445,7 +1465,7 @@ h3.red-title.corner{
                     font-size: 70px;
                     text-transform: uppercase;
                     padding: 13px 0 0 11px;
-                    
+
                     @media(max-width:1200px){
                         width:100%;
                         text-align:center;
@@ -1654,7 +1674,7 @@ h3.red-title.corner{
                             background:@white;
                             width:88%;
                             @media(max-width:992px){
-                               max-width:320px;
+                                max-width:320px;
                             }
                         }
                         textarea{
