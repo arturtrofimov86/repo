@@ -134,6 +134,9 @@ header{
                         color: #179028;
                         &:after{
                             border-top: 10px solid @white;
+                            @media(max-width:768px){
+                                display:none;
+                            }
                         }
                     }
                     @media(max-width:1024px){
@@ -1668,6 +1671,9 @@ h3.red-title.corner{
                     padding-left:22px;
                     -webkit-box-decoration-break: clone;
                     box-decoration-break: clone;
+                }
+                span{
+                    margin:0 22px 0 0;
                 }
                 @media(max-width:768px){
                     text-align:justify;
